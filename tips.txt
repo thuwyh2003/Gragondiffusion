@@ -1,0 +1,21 @@
+准备工作  conda create -n dragondiffusion python=3.9   
+         conda activate dragondiffusion
+
+first   pip install -r requirements.txt  其中pytorch_lightning应改成pytorch-lightning 
+second  安装basicsr 采用  1.git clone https://github.com/XPixel/Group/BasicSR.git (我已经导入了)
+                          2.cd BasicSR
+                            pip install -r requirements.txt  
+                            其中tb-nightly的安装需要临时切换阿里云  
+                                运行python -m pip install tb-nightly -i https://mirrors.aliyun.com/pypi/simple
+                          3 python setup .py develop
+third   run python3 app.py   运行即可进入弹出的网页
+
+note：  gradio的版本比较老，不过可以使用，不要更新为最新版本。
+
+
+
+
+
+
+
+
